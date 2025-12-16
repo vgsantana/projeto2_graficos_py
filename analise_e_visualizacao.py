@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import os
+
+os.makedirs('outputs/graficos', exist_ok=True)
 
 df = pd.read_csv(r'data\ecommerce_estatistica.csv')
 print(df.head().to_string())
@@ -15,7 +18,9 @@ print(df.describe())
 plt.figure(figsize=(20,6))
 sns.histplot(df['Preço'], bins=30, kde=True)
 plt.title('Preços')
+plt.savefig('outputs/graficos/histograma_precos.png', dpi=300, bbox_inches='tight')
 plt.show()
+plt.close()
 
 ''' 
 O Gráfico de Histograma nos permite perceber a precificacão dos produtos e onde ela está mais concentrada, podendo extrair daí o público alvo (segmentacão).
@@ -30,7 +35,9 @@ plt.figure(figsize=(10,6))
 sns.kdeplot(data = df_filtrado, x='Preço', hue='Gênero', fill=True)
 plt.title('Densidade de Preço por Gêneros')
 plt.xlabel('Preço')
+plt.savefig('outputs/graficos/densidade_preco_genero.png', dpi=300, bbox_inches='tight')
 plt.show()
+plt.close()
 
 ''' 
 O Gráfico de Densidade nos mostra a variedade de precos por categoria, Algumas categorias foram excluídas por baixa representatividade estatística.
@@ -40,7 +47,9 @@ O Gráfico de Densidade nos mostra a variedade de precos por categoria, Algumas 
 plt.figure(figsize=(20,6))
 sns.barplot(data=df, x='Gênero', y='Qtd_Vendidos_Cod')
 plt.title('Quantidade Média de Vendas por Gênero')
+plt.savefig('outputs/graficos/barra_vendas_genero.png', dpi=300, bbox_inches='tight')
 plt.show()
+plt.close()
 
 ''' 
 O Gráfico de Barra nos mostra a média de vendas por categoria.
@@ -52,7 +61,9 @@ sns.scatterplot(x='Preço', y='Desconto', alpha=0.4, data=df)
 plt.title('Relação entre Preço do Produto e Desconto Aplicado')
 plt.xlabel('Preço')
 plt.ylabel('Desconto (%)')
+plt.savefig('outputs/graficos/dispersao_preco_desconto.png', dpi=300, bbox_inches='tight')
 plt.show()
+plt.close()
 
 ''' 
 O Gráfico de Dispersão aponta para descontos dados, o valor daos descontos por valor de produto, também importante para saber se tem impacto nas vendas.
@@ -83,7 +94,9 @@ plt.legend(
 
 plt.title('Distribuicao das avaliacoes dos produtos')
 plt.tight_layout()
+plt.savefig('outputs/graficos/pizza_avaliacoes.png', dpi=300, bbox_inches='tight')
 plt.show()
+plt.close()
 
 ''' 
 O Gráfico de Pizza mostra a avaliacão dos produtos, para extrair a qualidade percebida pelos clientes, importante para saber se o produto
@@ -102,7 +115,9 @@ sns.regplot(
 plt.title('Vendas por Nota')
 plt.xlabel('Nota')
 plt.ylabel('Quantidade de Vendas')
+plt.savefig('outputs/graficos/regressao_vendas_nota.png', dpi=300, bbox_inches='tight')
 plt.show()
+plt.close()
 
 ''' 
 O Gráfico de Regressão análisa a qualidade do produto percebida pelo cliente e o impacto nas vendas.
@@ -113,7 +128,9 @@ df_corr =  df[['Qtd_Vendidos_Cod', 'Preço_MinMax', 'Desconto_MinMax', 'Nota_Min
 plt.figure(figsize=(10,6))
 sns.heatmap(df_corr, annot=True, fmt='.2f')
 plt.title('Mapa de calor da correlacao entre variáveis')
+plt.savefig('outputs/graficos/heatmap_correlacao.png', dpi=300, bbox_inches='tight')
 plt.show()
+plt.close()
 
 ''' 
 O Gráfico de calor nos mostra a correlacao entre as variáveis analisadas com o numero de vendas.
