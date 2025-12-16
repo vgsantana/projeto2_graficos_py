@@ -81,7 +81,7 @@ Cada gráfico foi escolhido de acordo com o tipo de variável analisada e o insi
 **Victor Gabriel Santana**
 Estudante de Análise de Dados | Python | Pandas
 
-🔗 GitHub: [https://github.com/vgsantana](https://github.com/vgsantana)
+🔗 Linkedin: www.linkedin.com/in/vgsantana-py
 
 ---
 
