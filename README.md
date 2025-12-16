@@ -13,8 +13,6 @@ Este projeto faz parte da construção do meu portfólio na área de **Análise 
 ## 🎯 Objetivos do Projeto
 
 * Explorar um dataset real de vendas
-* Aplicar estatísticas descritivas
-* Praticar tratamento e transformação de dados
 * Utilizar diferentes tipos de gráficos para análise
 * Analisar relações entre preço, desconto, avaliações e volume de vendas
 
@@ -41,15 +39,10 @@ O dataset contém informações relacionadas a produtos, preços, vendas, avalia
 
 1. Leitura do dataset a partir de arquivo CSV
 2. Inspeção inicial da estrutura dos dados (`head`, `info`, `describe`)
-3. Análise estatística básica (média, mediana, desvio padrão, distribuição)
-4. Tratamento e transformação de dados
-
-   * Conversão de tipos
-   * Criação de faixas e normalizações
-5. Análise de vendas por categoria
-6. Análise da relação entre preço, desconto e volume de vendas
-7. Análise das avaliações dos produtos
-8. Análise de correlação entre variáveis
+3. Análise de vendas por categoria
+4. Análise da relação entre preço, desconto e volume de vendas
+5. Análise das avaliações dos produtos
+6. Análise de correlação entre variáveis
 
 ---
 
@@ -68,13 +61,6 @@ Durante a análise, foram utilizados os seguintes tipos de gráficos:
 Cada gráfico foi escolhido de acordo com o tipo de variável analisada e o insight esperado.
 
 ---
-
-## 🔍 Principais Insights
-
-* Produtos com preços mais baixos apresentam maior volume de vendas, porém não necessariamente maior faturamento médio
-* Avaliações mais altas tendem a estar associadas a maiores volumes de vendas
-* Descontos variam conforme a faixa de preço dos produtos, sem indicar uma relação linear forte
-* Algumas categorias apresentam maior concentração de preços específicos, indicando segmentação de mercado
 
 ## 👤 Autor
 
