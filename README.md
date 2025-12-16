@@ -1,8 +1,8 @@
-# Análise Exploratória de Dados de E-commerce
+# Análise e Criação de gráficos
 
 ## 📌 Visão Geral
 
-Este projeto consiste em uma **Análise Exploratória de Dados (EDA)** aplicada a um dataset de e-commerce, com o objetivo de praticar e consolidar conceitos fundamentais utilizados na rotina de um **Analista de Dados**.
+Este projeto, feito para conclusão do modulo de visualização de dados do curso da EBAC, consiste em uma **Análise Exploratória de Dados (EDA)** aplicada a um dataset de e-commerce, com o objetivo de praticar e consolidar conceitos fundamentais utilizados na rotina de um **Analista de Dados**.
 
 O foco do projeto não é construir modelos preditivos, mas **explorar, compreender os dados, identificar padrões, levantar hipóteses e extrair insights iniciais**, utilizando técnicas estatísticas e visualizações.
 
@@ -31,8 +31,7 @@ Este projeto faz parte da construção do meu portfólio na área de **Análise 
 
 ## 📊 Dataset
 
-* **Fonte:** Kaggle – Brazilian E-Commerce Dataset (Olist)
-* **Link:** [https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+Dataset cedido pela Ebac para o projeto de conclusão do modulo de visualização de dados.
 
 O dataset contém informações relacionadas a produtos, preços, vendas, avaliações, descontos e categorias, permitindo análises exploratórias diversas.
 
@@ -76,33 +75,6 @@ Cada gráfico foi escolhido de acordo com o tipo de variável analisada e o insi
 * Avaliações mais altas tendem a estar associadas a maiores volumes de vendas
 * Descontos variam conforme a faixa de preço dos produtos, sem indicar uma relação linear forte
 * Algumas categorias apresentam maior concentração de preços específicos, indicando segmentação de mercado
-
-> ⚠️ Os resultados representam **análises exploratórias**, não conclusões definitivas ou causais.
-
----
-
-## 📂 Estrutura do Projeto
-
-```
-projeto-analise-dados/
-│
-├── data/
-│   └── ecommerce_estatistica.csv
-│
-├── analise_e_visualizacao.py
-├── README.md
-```
-
----
-
-## 🚀 Próximos Passos
-
-* Adicionar visualizações mais avançadas
-* Criar uma versão em **Jupyter Notebook** para apresentação
-* Explorar análise temporal de vendas
-* Evoluir para modelos preditivos simples
-
----
 
 ## 👤 Autor
 
